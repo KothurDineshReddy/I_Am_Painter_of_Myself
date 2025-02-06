@@ -51,7 +51,7 @@ This project explores **Generative Adversarial Networks (GANs)** for transformin
 - [MiFID Metric Paper](https://doi.org/10.1038/s41524-023-01042-3)
 
 ## 💡 Contributors
-- Team Members:
+
 - Dinesh Reddy Kothur
 - Harshitha reddy
 - Shivani Reddy
