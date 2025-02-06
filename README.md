@@ -64,11 +64,11 @@ This project explores **Generative Adversarial Networks (GANs)** for transformin
 
 ✅ **CycleGAN** produced the best results, achieving the lowest **MiFID score** while maintaining training efficiency.
 
+## 🖼️ Sample Outputs
 ---
 <img width="750" alt="Screenshot 2025-02-05 at 11 28 11 PM" src="https://github.com/user-attachments/assets/7f56a5c1-7fe0-4617-861d-c07f997d6c15" />
 
 
-## 🖼️ Sample Outputs
 
 ## 🚀 Future Improvements
 - Enhance models with **attention mechanisms** to better capture Monet's brushwork.
@@ -86,18 +86,8 @@ This project explores **Generative Adversarial Networks (GANs)** for transformin
 ---
 
 ## 💡 Contributors
-- **Your Name** ([@your-github](https://github.com/your-github))
-- Team Members
-
----
-
-📌 **How to Run**
-```bash
-# Clone this repository
-git clone https://github.com/your-github/monet-style-gan.git
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Run the Jupyter Notebook
-jupyter notebook
+Dinesh Reddy Kothur
+Harshitha reddy L
+Shivani Reddy B
+Sai Kiran B
+Nikitha G
