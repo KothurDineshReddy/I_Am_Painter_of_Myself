@@ -86,8 +86,8 @@ This project explores **Generative Adversarial Networks (GANs)** for transformin
 ---
 
 ## 💡 Contributors
-Dinesh Reddy Kothur
-Harshitha reddy L
-Shivani Reddy B
-Sai Kiran B
-Nikitha G
+- Dinesh Reddy Kothur
+- Harshitha reddy L
+- Shivani Reddy B
+- Sai Kiran B
+- Nikitha G
