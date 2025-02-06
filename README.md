@@ -9,23 +9,52 @@ This project explores **Generative Adversarial Networks (GANs)** for transformin
 - **VAE-GAN** - Combines Variational Autoencoders (VAE) with GANs for structured latent representation.
 - **WGAN** - Utilizes Wasserstein distance to stabilize training and improve output diversity.
 
-## 📂 Dataset
+---
+
+## 🛠️ Technologies & Libraries Used
+### **Programming & Frameworks**
+- **Python 3.8+**
+- **PyTorch** (Primary deep learning framework)
+- **Torchvision** (For dataset transformations & augmentation)
+- **OpenCV** (For image preprocessing)
+- **NumPy & Pandas** (For data handling)
+- **Matplotlib & Seaborn** (For visualization)
+
+### **GAN-Specific Implementations**
+- **CycleGAN, U-GAT-IT, WGAN, VAE-GAN** implemented using **PyTorch**  
+- **CUDA & cuDNN** enabled for GPU acceleration  
+
+### **Tools Used**
+- **Jupyter Notebook** (for model development)
+- **Google Colab** (for GPU-based training)
+- **Weights & Biases (W&B)** (for experiment tracking)
+
+---
+
+## 📂 Dataset Details
 - **Source**: [Kaggle - "I'm Something of a Painter Myself"](https://www.kaggle.com/competitions/gan-getting-started/overview)
 - **Photos**: 7,038 images
 - **Monet Paintings**: 300 images
 - **Resolution**: All images resized to **256x256** pixels
 
-## 📊 Data Preprocessing & Transformation
-- **Normalization**: All images converted to [−1,1] scale.
-- **Augmentation**: Random cropping, flipping, color jittering, Gaussian blurring.
-- **Aspect Ratio**: Maintained 1:1 for consistency.
+### **Data Preprocessing & Augmentation**
+- **Normalization**: Converted images to [−1,1] scale.
+- **Resizing & Cropping**: All images resized to **256x256** with aspect ratio 1:1.
+- **Data Augmentation**:
+  - Horizontal & vertical flips
+  - Color jittering
+  - Gaussian blur for WGAN preprocessing
+  - Perspective distortions (for U-GAT-IT)
+  - Random cropping (for CycleGAN)
+
+---
 
 ## 📈 Evaluation Metrics
 - **Fréchet Inception Distance (FID)** - Measures realism of generated images.
 - **Memorization-informed FID (MiFID)** - Penalizes overfitting and memorization.
 - **Lower MiFID** → Higher quality & diversity.
 
-## 🔍 Results
+### **Results**
 | Model          | Epochs | MiFID Score (↓) |
 |---------------|--------|----------------|
 | **CycleGAN**  | 20     | **58.35** |
@@ -35,14 +64,18 @@ This project explores **Generative Adversarial Networks (GANs)** for transformin
 
 ✅ **CycleGAN** produced the best results, achieving the lowest **MiFID score** while maintaining training efficiency.
 
+---
+<img width="750" alt="Screenshot 2025-02-05 at 11 28 11 PM" src="https://github.com/user-attachments/assets/7f56a5c1-7fe0-4617-861d-c07f997d6c15" />
+
+
 ## 🖼️ Sample Outputs
-![Generated Monet Style Images](./path_to_your_image.png)  
-📌 *Replace `path_to_your_image.png` with the actual image path in your repository.*
 
 ## 🚀 Future Improvements
 - Enhance models with **attention mechanisms** to better capture Monet's brushwork.
 - Optimize architectures for **faster training** and **lower computational cost**.
 - Implement **style-specific augmentation** for improved artistic realism.
+
+---
 
 ## 🔗 References
 - [CycleGAN Paper](https://arxiv.org/abs/1703.10593)
@@ -50,13 +83,21 @@ This project explores **Generative Adversarial Networks (GANs)** for transformin
 - [WGAN Paper](https://arxiv.org/abs/1701.07875)
 - [MiFID Metric Paper](https://doi.org/10.1038/s41524-023-01042-3)
 
-## 💡 Contributors
+---
 
-- Dinesh Reddy Kothur
-- Harshitha reddy
-- Shivani Reddy
-- Sai Kiran B
-- Nikitha
-  
+## 💡 Contributors
+- **Your Name** ([@your-github](https://github.com/your-github))
+- Team Members
+
+---
+
+📌 **How to Run**
+```bash
+# Clone this repository
+git clone https://github.com/your-github/monet-style-gan.git
+
+# Install dependencies
+pip install -r requirements.txt
+
 # Run the Jupyter Notebook
 jupyter notebook
